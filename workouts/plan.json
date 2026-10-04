@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2026-10-11",
+    "name": "TEST - verification cible Garmin",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:test-allure-cible-2026-10-11",
+    "intro": "Seance de verification technique uniquement (pas un entrainement du programme) : on confirme que la cible d'allure arrive bien sur la montre avant de construire le reste du plan.",
+    "steps": [
+      { "type": "step", "duration": 600, "label": "Echauffement facile" },
+      {
+        "type": "repeat",
+        "count": 3,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 300,
+            "target": { "type": "pace", "start": 325, "end": 345 }
+          },
+          { "type": "step", "duration": 120, "label": "recuperation" }
+        ]
+      },
+      { "type": "step", "duration": 300, "label": "Retour au calme" }
+    ],
+    "notes": "Objectif unique de cette seance : verifier sur la Forerunner 255 que chaque bloc de 5min affiche bien une cible 5:25-5:45/km (et pas 'Pas de cible')."
+  }
+]
