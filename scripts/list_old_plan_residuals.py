@@ -10,6 +10,11 @@ cote Intervals.icu.
 Ce script ne fait que lister (GET) -- aucune suppression. La suppression
 reste une action volontaire, faite par Lorin lui-meme sur Intervals.icu.
 
+Le marqueur "cub27-v1-..." peut se trouver soit dans le champ external_id,
+soit en texte libre dans la description (observe le 04/10/2026 : l'ancien
+script ecrivait "Source-ID : cub27-v1-..." dans la description plutot que
+dans le champ external_id dedie de l'API) -- on verifie donc les deux.
+
 Usage : python scripts/list_old_plan_residuals.py [oldest] [newest]
 """
 
@@ -40,6 +45,12 @@ def fetch_events(session: requests.Session, athlete_id: str, oldest: str, newest
     return response.json()
 
 
+def is_old_plan(e: dict) -> bool:
+    ext = e.get("external_id") or ""
+    desc = e.get("description") or ""
+    return ext.startswith(OLD_PLAN_PREFIX) or OLD_PLAN_PREFIX in desc
+
+
 def main() -> None:
     athlete_id = os.environ["INTERVALS_ATHLETE_ID"]
     oldest = sys.argv[1] if len(sys.argv) > 1 else "2026-01-01"
@@ -49,7 +60,7 @@ def main() -> None:
     events = fetch_events(session, athlete_id, oldest, newest)
 
     residuals = sorted(
-        (e for e in events if (e.get("external_id") or "").startswith(OLD_PLAN_PREFIX)),
+        (e for e in events if is_old_plan(e)),
         key=lambda e: e.get("start_date_local", ""),
     )
 
