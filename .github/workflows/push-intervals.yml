@@ -1,0 +1,38 @@
+name: Push vers Intervals.icu
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    env:
+      INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+      INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+      # Allure seuil course a pied (mesuree Garmin le 04/10/2026) : 5'05/km.
+      # A changer ici si elle evolue -- ne contient aucun secret, c'est une
+      # donnee d'entrainement normale.
+      RUN_THRESHOLD_PACE_SECS_PER_KM: "305"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dependances
+        run: pip install -r requirements.txt
+
+      - name: Valider le plan
+        run: python scripts/validate_plan.py
+
+      - name: Tests unitaires
+        run: python -m unittest discover -s tests
+
+      - name: Configurer l'allure seuil (correctif cible Garmin)
+        run: python scripts/configure_sport_settings.py
+
+      - name: Publier les seances sur Intervals.icu
+        run: python scripts/push_intervals.py workouts/plan.json
