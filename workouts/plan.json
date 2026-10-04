@@ -1,13 +1,551 @@
 [
   {
-    "date": "2026-10-11",
-    "name": "TEST - verification cible Garmin",
+    "date": "2026-10-05",
+    "name": "Lundi — EF plat",
     "category": "WORKOUT",
     "sport": "Run",
-    "external_id": "trail-training:test-allure-cible-2026-10-11",
-    "intro": "Seance de verification technique uniquement (pas un entrainement du programme) : on confirme que la cible d'allure arrive bien sur la montre avant de construire le reste du plan.",
+    "external_id": "trail-training:2026-10-05-ef-lundi",
     "steps": [
-      { "type": "step", "duration": 600, "label": "Echauffement facile" },
+      {
+        "type": "step",
+        "duration": 2400,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "name": "Mardi — Seance allures (3x8min)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-06-mardi-allures",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 3,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 480,
+            "target": {
+              "type": "pace",
+              "start": 305,
+              "end": 315
+            }
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "name": "Vendredi — Trail specifique (5x4min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-09-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 5,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 240,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-10",
+    "name": "Samedi — Trail 30min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-10-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 1800,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-11",
+    "name": "Dimanche — Sortie longue 2h00",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-11-dimanche-sl",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 7200,
+        "label": "EF stricte, D+ libre"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-12",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-12-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 2400,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "name": "Mardi — Cotes (8x90s)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-13-mardi-cotes",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 8,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 90,
+            "label": "montee soutenue"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recup trot/marche descente"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "name": "Vendredi — Trail specifique (6x4min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-16-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 6,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 240,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "name": "Samedi — Trail 35min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-17-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 2100,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "name": "Dimanche — Sortie longue 2h15",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-18-dimanche-sl",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 8100,
+        "label": "EF stricte, D+ libre"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-19-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 2700,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "name": "Mardi — Seance allures (4x8min)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-20-mardi-allures",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 4,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 480,
+            "target": {
+              "type": "pace",
+              "start": 300,
+              "end": 310
+            }
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "name": "Vendredi — Trail specifique (5x5min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-23-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 5,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 300,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "name": "Samedi — Trail 35min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-24-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 2100,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "name": "Dimanche — Sortie longue 2h15",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-25-dimanche-sl",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 8100,
+        "label": "EF stricte, D+ libre"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-26-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 2700,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "name": "Mardi — Cotes (10x90s)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-27-mardi-cotes",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 10,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 90,
+            "label": "montee soutenue"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recup trot/marche descente"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "name": "Vendredi — Trail specifique (6x5min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-30-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 6,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 300,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 90,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-31",
+    "name": "Samedi — Trail 40min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-10-31-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 2400,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "name": "Dimanche — Sortie longue 2h30",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-01-dimanche-sl",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 9000,
+        "label": "EF stricte, D+ libre"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-02-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1800,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "name": "Mardi — Seance allures (3x5min)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-03-mardi-allures",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
       {
         "type": "repeat",
         "count": 3,
@@ -15,13 +553,740 @@
           {
             "type": "step",
             "duration": 300,
-            "target": { "type": "pace", "start": 325, "end": 345 }
+            "target": {
+              "type": "pace",
+              "start": 315,
+              "end": 325
+            }
           },
-          { "type": "step", "duration": 120, "label": "recuperation" }
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
         ]
       },
-      { "type": "step", "duration": 300, "label": "Retour au calme" }
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "name": "Vendredi — Trail specifique (4x4min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-06-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 4,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 240,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-07",
+    "name": "Samedi — Trail 20min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-07-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "facile (semaine de decharge)"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "name": "Dimanche — Sortie longue 1h30",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-08-dimanche-sl",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 5400,
+        "label": "EF stricte, D+ libre"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-09-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 2700,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "name": "Mardi — Cotes (8x120s)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-10-mardi-cotes",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 8,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "montee soutenue"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recup trot/marche descente"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "name": "Vendredi — Trail specifique (6x6min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-13-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 6,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 360,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 90,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-14",
+    "name": "Samedi — Trail 45min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-14-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 2700,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "name": "Dimanche — Sortie longue 2h30",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-15-dimanche-sl",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 9000,
+        "label": "EF stricte, D+ libre"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-16-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 3000,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "name": "Mardi — Seance allures (4x10min)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-17-mardi-allures",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 4,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 600,
+            "target": {
+              "type": "pace",
+              "start": 295,
+              "end": 305
+            }
+          },
+          {
+            "type": "step",
+            "duration": 90,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "name": "Vendredi — Trail specifique (5x7min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-20-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 5,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 420,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 90,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "name": "Samedi — Trail 45min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-21-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 2700,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "name": "Dimanche — Sortie longue + 20min seuil",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-22-dimanche-sl-seuil20",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 3900,
+        "label": "EF, D+ libre"
+      },
+      {
+        "type": "step",
+        "duration": 1200,
+        "target": {
+          "type": "pace",
+          "start": 305,
+          "end": 320
+        }
+      },
+      {
+        "type": "step",
+        "duration": 3900,
+        "label": "EF, D+ libre, retour"
+      }
     ],
-    "notes": "Objectif unique de cette seance : verifier sur la Forerunner 255 que chaque bloc de 5min affiche bien une cible 5:25-5:45/km (et pas 'Pas de cible')."
+    "notes": "Preparation specifique Hivernatrail : bloc continu a allure seuil sur portion roulante au milieu de la sortie."
+  },
+  {
+    "date": "2026-11-23",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-23-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 3000,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "name": "Mardi — Cotes (10x150s)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-24-mardi-cotes",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 10,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 150,
+            "label": "montee soutenue"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recup trot/marche descente"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "name": "Vendredi — Trail specifique (4x8min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-27-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 4,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 480,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-28",
+    "name": "Samedi — Trail 50min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-28-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 3000,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-29",
+    "name": "Dimanche — Sortie longue + 30min seuil",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-29-dimanche-sl-seuil30",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 4020,
+        "label": "EF, D+ libre"
+      },
+      {
+        "type": "step",
+        "duration": 1800,
+        "target": {
+          "type": "pace",
+          "start": 305,
+          "end": 320
+        }
+      },
+      {
+        "type": "step",
+        "duration": 4080,
+        "label": "EF, D+ libre, retour"
+      }
+    ],
+    "notes": "Repetition generale Hivernatrail : bloc seuil plus long, J-2 semaines."
+  },
+  {
+    "date": "2026-11-30",
+    "name": "Lundi — EF plat",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-11-30-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 2400,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-12-01",
+    "name": "Mardi — Seance allures (3x6min)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-01-mardi-allures",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Educatifs (montees genoux, talons-fesses, skipping, foulees bondissantes)"
+      },
+      {
+        "type": "repeat",
+        "count": 3,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 360,
+            "target": {
+              "type": "pace",
+              "start": 290,
+              "end": 300
+            }
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-12-04",
+    "name": "Vendredi — Trail specifique (3x6min effort soutenu)",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-04-vendredi-trail-specifique",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "repeat",
+        "count": 3,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 360,
+            "label": "effort soutenu, au ressenti"
+          },
+          {
+            "type": "step",
+            "duration": 120,
+            "label": "recuperation"
+          }
+        ]
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-12-05",
+    "name": "Samedi — Trail 25min",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-05-samedi-trail",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 900,
+        "label": "Echauffement facile"
+      },
+      {
+        "type": "step",
+        "duration": 1500,
+        "label": "effort soutenu continu"
+      },
+      {
+        "type": "step",
+        "duration": 600,
+        "label": "Retour au calme facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-12-06",
+    "name": "Dimanche — Sortie longue 2h00",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-06-dimanche-sl",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 7200,
+        "label": "EF stricte, D+ libre"
+      }
+    ]
+  },
+  {
+    "date": "2026-12-07",
+    "name": "Lundi — Affutage facile",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-07-ef-lundi",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1800,
+        "label": "EF facile, conversation possible"
+      }
+    ]
+  },
+  {
+    "date": "2026-12-08",
+    "name": "Mardi — Decrassage + accelerations",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-08-mardi-decrassage",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1500,
+        "label": "EF tres facile"
+      },
+      {
+        "type": "repeat",
+        "count": 4,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 20,
+            "label": "acceleration non chronometree"
+          },
+          {
+            "type": "step",
+            "duration": 100,
+            "label": "recuperation marche"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-11",
+    "name": "Vendredi — Tres facile",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-11-vendredi-tres-facile",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "EF tres facile"
+      }
+    ]
+  },
+  {
+    "date": "2026-12-12",
+    "name": "Samedi — Veille de course",
+    "category": "WORKOUT",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-12-samedi-veille-course",
+    "steps": [
+      {
+        "type": "step",
+        "duration": 1200,
+        "label": "EF tres facile"
+      },
+      {
+        "type": "repeat",
+        "count": 3,
+        "steps": [
+          {
+            "type": "step",
+            "duration": 15,
+            "label": "acceleration non chronometree"
+          },
+          {
+            "type": "step",
+            "duration": 105,
+            "label": "recuperation marche"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-12-13",
+    "name": "COURSE — HIVERNATRAIL 20km / 550m D+",
+    "category": "NOTE",
+    "sport": "Run",
+    "external_id": "trail-training:2026-12-13-hivernatrail",
+    "description": "Hivernatrail, Saint-Come-et-Maruejols (Gard). 20km / 550m D+. Objectif chrono : 2h00. Gerer l'effort au ressenti selon le denivele plutot qu'une allure kilometrique fixe.",
+    "moving_time": 7200
   }
-]
+    ]
